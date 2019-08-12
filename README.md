@@ -4,6 +4,8 @@ This is a sample C# project setup with [raylib][raylib] for Visual Studio 2017.
 Raylib is a simple game programming framework that is designed to be friendly to
 beginners. It is created by [Ramon Santamaria (@raysan5)][raysan].
 
+The language binding is maintained at [ChrisDill/Raylib-cs][raylib-cs].
+
 It is primarily intended for use by students in the Game Programming course at
 the Seattle Campus of the Academy of Interactive Entertainment.
 
@@ -25,19 +27,19 @@ test this, build and run the provided sample project.
 
 The sample project that is provided is the [basic window example][basicexample]
 from raylib. Further examples can be found in its [repository][rayexample] or
-on the [website][rayexamplesite]. The examples are written in C++, but an
-equivalent should be available for C# as well.
+on the [website][rayexamplesite].
 
 You can review the [cheatsheet][raycheat] for the full range of functions made
 available through raylib. Note that the identifiers for some methods may differ
-for the C\# language binding we're using. The language binding is maintained at
-[ChrisDill/Raylib-cs][raylib-cs].
+for the C\# language binding we're using. A full list of all methods and types
+made available via the [binding can be found in the Raylib-cs repository][raylib-cs-bindings].
 
 [basicexample]:https://github.com/raysan5/raylib/blob/master/examples/core/core_basic_window.cpp
-[rayexample]:https://github.com/raysan5/raylib/tree/master/examples
+[rayexample]:https://github.com/ChrisDill/Raylib-cs/tree/master/Examples
 [rayexamplesite]:https://www.raylib.com/examples.html
 [raycheat]:https://www.raylib.com/cheatsheet/cheatsheet.html
 [raylib-cs]:https://github.com/ChrisDill/Raylib-cs
+[raylib-cs-bindings]:https://github.com/ChrisDill/Raylib-cs/blob/master/Bindings/Raylib.cs
 
 ## License
 
