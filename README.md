@@ -1,4 +1,4 @@
-# raygamecsgame - sample project
+# raygamecsharp - sample project
 
 This is a sample C# project setup with [raylib][raylib] for Visual Studio 2017.
 Raylib is a simple game programming framework that is designed to be friendly to
@@ -31,7 +31,7 @@ equivalent should be available for C# as well.
 You can review the [cheatsheet][raycheat] for the full range of functions made
 available through raylib. Note that the identifiers for some methods may differ
 for the C\# language binding we're using. The language binding is maintained at
-[ChrisDill/Raylib-cs][raylb-cs].
+[ChrisDill/Raylib-cs][raylib-cs].
 
 [basicexample]:https://github.com/raysan5/raylib/blob/master/examples/core/core_basic_window.cpp
 [rayexample]:https://github.com/raysan5/raylib/tree/master/examples
