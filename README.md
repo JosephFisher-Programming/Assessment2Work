@@ -26,15 +26,15 @@ test this, build and run the provided sample project.
 ![A screenshot of the included sample project](.github/raygame.png)
 
 The sample project that is provided is the [basic window example][basicexample]
-from raylib. Further examples can be found in its [repository][rayexample] or
-on the [website][rayexamplesite].
+from raylib. Further examples can be found in its [repository][rayexample].
+Examples are also available in C++-only on the [website][rayexamplesite].
 
 You can review the [cheatsheet][raycheat] for the full range of functions made
 available through raylib. Note that the identifiers for some methods may differ
 for the C\# language binding we're using. A full list of all methods and types
 made available via the [binding can be found in the Raylib-cs repository][raylib-cs-bindings].
 
-[basicexample]:https://github.com/raysan5/raylib/blob/master/examples/core/core_basic_window.cpp
+[basicexample]:https://github.com/ChrisDill/Raylib-cs/blob/master/Examples/core/core_basic_window.cs
 [rayexample]:https://github.com/ChrisDill/Raylib-cs/tree/master/Examples
 [rayexamplesite]:https://www.raylib.com/examples.html
 [raycheat]:https://www.raylib.com/cheatsheet/cheatsheet.html
