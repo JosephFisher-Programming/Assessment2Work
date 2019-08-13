@@ -4,7 +4,9 @@ This is a sample C# project setup with [raylib][raylib] for Visual Studio 2017.
 Raylib is a simple game programming framework that is designed to be friendly to
 beginners. It is created by [Ramon Santamaria (@raysan5)][raysan].
 
-The language binding is maintained at [ChrisDill/Raylib-cs][raylib-cs].
+The language binding is maintained at [ChrisDill/Raylib-cs][raylib-cs] and
+is compatible with Raylib 2.0. Work towards Raylib 2.5 can be tracked in
+[this issue](https://github.com/ChrisDill/Raylib-cs/issues/22).
 
 It is primarily intended for use by students in the Game Programming course at
 the Seattle Campus of the Academy of Interactive Entertainment.
@@ -49,6 +51,6 @@ For more information, see the [license][lic] file.
 
 Third party works are attributed under [thirdparty.md][3p].
 
-[lic]:license.md
+[lic]:LICENSE.md
 [3p]:THIRDPARTY.md
 [raylib]:https://github.com/raysan5/raylib
