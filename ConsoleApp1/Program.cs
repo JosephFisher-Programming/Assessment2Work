@@ -3,20 +3,43 @@ using rl = Raylib.Raylib;
 
 static class Program
 {
-    public static void Main()
+    public static int Main()
     {
-        rl.InitWindow(640, 480, "Hello World");
+        // Initialization
+        //--------------------------------------------------------------------------------------
+        int screenWidth = 800;
+        int screenHeight = 450;
 
-        while (!rl.WindowShouldClose())
+        rl.InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+
+        rl.SetTargetFPS(60);
+        //--------------------------------------------------------------------------------------
+
+        // Main game loop
+        while (!rl.WindowShouldClose())    // Detect window close button or ESC key
         {
+            // Update
+            //----------------------------------------------------------------------------------
+            // TODO: Update your variables here
+            //----------------------------------------------------------------------------------
+
+            // Draw
+            //----------------------------------------------------------------------------------
             rl.BeginDrawing();
 
-            rl.ClearBackground(Color.WHITE);
-            rl.DrawText("Hello, world!", 12, 12, 20, Color.BLACK);
+            rl.ClearBackground(Color.RAYWHITE);
+
+            rl.DrawText("Congrats! You created your first window!", 190, 200, 20, Color.LIGHTGRAY);
 
             rl.EndDrawing();
+            //----------------------------------------------------------------------------------
         }
 
-        rl.CloseWindow();
+        // De-Initialization
+        //--------------------------------------------------------------------------------------
+        rl.CloseWindow();        // Close window and OpenGL context
+        //--------------------------------------------------------------------------------------
+
+        return 0;
     }
 }
