@@ -1,45 +1,48 @@
 ﻿using Raylib;
 using rl = Raylib.Raylib;
 
-static class Program
+namespace ConsoleApp1
 {
-    public static int Main()
+    static class Program
     {
-        // Initialization
-        //--------------------------------------------------------------------------------------
-        int screenWidth = 800;
-        int screenHeight = 450;
-
-        rl.InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
-
-        rl.SetTargetFPS(60);
-        //--------------------------------------------------------------------------------------
-
-        // Main game loop
-        while (!rl.WindowShouldClose())    // Detect window close button or ESC key
+        public static int Main()
         {
-            // Update
-            //----------------------------------------------------------------------------------
-            // TODO: Update your variables here
-            //----------------------------------------------------------------------------------
+            // Initialization
+            //--------------------------------------------------------------------------------------
+            int screenWidth = 800;
+            int screenHeight = 450;
 
-            // Draw
-            //----------------------------------------------------------------------------------
-            rl.BeginDrawing();
+            rl.InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
-            rl.ClearBackground(Color.RAYWHITE);
+            rl.SetTargetFPS(60);
+            //--------------------------------------------------------------------------------------
 
-            rl.DrawText("Congrats! You created your first window!", 190, 200, 20, Color.LIGHTGRAY);
+            // Main game loop
+            while (!rl.WindowShouldClose())    // Detect window close button or ESC key
+            {
+                // Update
+                //----------------------------------------------------------------------------------
+                // TODO: Update your variables here
+                //----------------------------------------------------------------------------------
 
-            rl.EndDrawing();
-            //----------------------------------------------------------------------------------
+                // Draw
+                //----------------------------------------------------------------------------------
+                rl.BeginDrawing();
+
+                rl.ClearBackground(Color.RAYWHITE);
+
+                rl.DrawText("Congrats! You created your first window!", 190, 200, 20, Color.LIGHTGRAY);
+
+                rl.EndDrawing();
+                //----------------------------------------------------------------------------------
+            }
+
+            // De-Initialization
+            //--------------------------------------------------------------------------------------
+            rl.CloseWindow();        // Close window and OpenGL context
+                                     //--------------------------------------------------------------------------------------
+
+            return 0;
         }
-
-        // De-Initialization
-        //--------------------------------------------------------------------------------------
-        rl.CloseWindow();        // Close window and OpenGL context
-        //--------------------------------------------------------------------------------------
-
-        return 0;
     }
 }
