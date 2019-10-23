@@ -24,6 +24,8 @@ namespace ConsoleApp1
         {
         }
 
+        
+
         public void Load(string filename)
         {
             Image img = LoadImage(filename);
@@ -31,6 +33,7 @@ namespace ConsoleApp1
         }
         public override void OnDraw()
         {
+            Recalculating();
             float rotation = (float)Math.Atan2(
                 globalTransform.m2, globalTransform.m1);
 
@@ -39,6 +42,8 @@ namespace ConsoleApp1
                 new Vector2(globalTransform.m7, globalTransform.m8),
                 rotation * (float)(180.0f / Math.PI), 
                 1, Color.WHITE);
+            hitBox();
+            
         }
     }
 }

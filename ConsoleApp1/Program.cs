@@ -9,7 +9,7 @@ namespace ConsoleApp1
         {
             Game game = new Game();
 
-            InitWindow(640, 480, "Tanks for Everything");
+            InitWindow(1280, 960, "Tanks for Everything");
 
             game.Init();
 
